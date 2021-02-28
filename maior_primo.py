@@ -1,17 +1,23 @@
 import sys
 
+def proxPrimo(n):
+    i = 0
+    i = i + 1
+    ePrimo(n-i)
+    P = (n - i)
+    print(P)
+
+
+
 def ePrimo(n):
     m = 0
-    i = 0
     for c in range(1, n + 1):
         if n % c == 0:
             m = m + 1
     if m == 2:
         return(n)
     else:
-        i = i + 1
-        ePrimo(n-i)
-        return(n-i)
+        proxPrimo(n)
 
 
 
