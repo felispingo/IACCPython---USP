@@ -11,7 +11,7 @@ def ePrimo(n):
     else:
         i = i + 1
         ePrimo(n-i)
-        eprint(n-i)
+        return(n-i)
 
 
 
